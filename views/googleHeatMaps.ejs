@@ -19,16 +19,29 @@
         margin: 0;
         padding: 0;
       }
+      .legend { list-style: none; }
+      .legend li { float: left; margin-right: 10px; }
+      .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+      /* your colors */
+      .legend .postive { background-color:lightgreen; }
+      .legend .negative { background-color:red; }
+      .legend .neutral { background-color:lightblue; }
+
     </style>
   </head>
   <body>
 
 	<form method="post">
 
-		<!-- <div id="floating-panel">
-      <input type="button" value="Toggle visibility"></input>
-			<input type = "submit" class="btn btn-default btn-block updateDetails" formaction="/pie" value="Sentiment Details">
-    </div> -->
+		<div id="floating-panel">
+      <!-- <input type="button" value="Toggle visibility"></input>
+			<input type = "submit" class="btn btn-default btn-block updateDetails" formaction="/pie" value="Sentiment Details"> -->
+      <ul class="legend">
+          <li><span class="postive"></span>Positive Sentiment</li>
+          <li><span class="negative"></span>Negative Sentiment</li>
+          <li><span class="neutral"></span>Neutral Sentiment</li>
+      </ul>
+    </div>
     <span class="data" style="display:none"><%= data %></span>
     <div class="form-group row" style="display:none">
             <label for="data" class="col-sm-4 col-form-label">Data</label>
