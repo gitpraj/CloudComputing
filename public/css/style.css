@@ -1,0 +1,577 @@
+body{
+    background-color: aliceblue;
+}
+/*
+    index.html
+ */
+.iam {
+    border: solid 1px red;
+}
+
+.btn-close-float{
+    position:absolute;
+    top:5%;
+    right:3%;
+    z-index: +1;
+    font-size:24px;
+}
+
+#wrapper { position: relative; }
+
+.overlap {position:absolute;}
+
+#floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+/*
+    LoginPage
+ */
+
+.login-page-block {
+    text-align: center;
+    padding:0;
+}
+.login-page-block>div {
+    display: inline-block;
+    margin:30% auto;
+}
+
+.login-page-block>form{
+    margin:30% auto;
+}
+
+.welcome-block{
+    background-color: #1b2242;
+    display:inline-block;
+}
+
+.login-block {
+    background-color: white;
+    display:inline-block;
+}
+
+.auth-block{
+    background-color:white;
+    display:inline-block;
+}
+
+.row>div{
+    height:550px;
+}
+
+/*
+    Welcome To Signup
+ */
+.welcome-title{
+    width: 251px;
+    height: 33px;
+    font-family: Oxygen;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #d2d6e4;
+    margin:0;
+}
+
+.welcome-text{
+    margin:auto;
+    width: 274px;
+    font-family: Oxygen;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #d2d6e4;
+    padding: 10% 0;
+}
+
+.welcome-text-pwd{
+    margin:auto;
+    width: 200px;
+    font-family: Oxygen;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #d2d6e4;
+    padding: 10% 0;
+}
+
+.welcome-text-dark{
+    margin:auto;
+    width: 452px;
+    font-family: Oxygen;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #1b2242;
+    padding: 10% 0;
+}
+
+
+.logo{
+    height:85px;
+    width:85px;
+    margin:auto;
+}
+
+
+/*
+    LoginForm
+ */
+
+.form-group{
+    margin-bottom:7%;
+}
+.h-e-a-d-e-r-t-e-x-t {
+    height: 27.9px;
+    font-family: Oxygen;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    margin-left: 8%;
+    margin-bottom: 8%;
+}
+
+.form-horizontal{
+    margin:auto;
+}
+
+.btn-forgotPwd{
+    float:right;
+    margin-right: 20%;
+}
+
+.btn-forgotPwd hover{
+
+}
+
+/*
+    Forgot Password Page
+ */
+.reset-pwd-page-block {
+    text-align: center;
+    padding:0;
+    height:70%;
+}
+.reset-pwd-page-block>div {
+    display: inline-block;
+    margin:30% auto;
+}
+
+.reset-pwd-block>form{
+    margin:30% auto;
+}
+
+.reset-pwd-block{
+    background-color: white;
+}
+
+/*
+    Email Send Page
+ */
+.email-sent-block{
+    background-color: white;
+    margin:0;
+    text-align: center;
+    padding:0;
+    position: absolute;
+    left:25%;
+    top:25%;
+    z-index: +1;
+}
+
+.email-sent-block>div {
+    display: inline-block;
+    margin:auto;
+}
+
+.logo-email{
+    height:60px;
+    width:85px;
+    margin:auto;
+}
+/*
+    Input style [SingupPage LoginPage]
+ */
+.input-w-60{
+    width: 60% ;
+    margin:auto;
+    border-top-style: none;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/*
+    Button style
+ */
+
+.btn-welcome{
+    color:white;
+    background-color: #1b2242;
+    border-color:white;
+    border-radius:0;
+    width:100%
+}
+
+.btn-nav{
+    color:#1b2242;
+    background-color: white;
+    border-color:#1b2242;
+    border-radius:0;
+    width:100%
+}
+
+.btn-login{
+    color:#1b2242;
+    background-color: white;
+    border-color:#1b2242;
+    border-radius:0;
+    width:60%;
+    margin-bottom:7%;
+}
+
+.btn-fb{
+    background-color: #3b5998;
+}
+
+
+.btn-auth{
+    margin:auto;
+}
+
+.btn-block{
+    width:48%;
+    margin:auto;
+}
+
+.btn-social{
+    text-align: center;
+}
+
+.btn-nav-login{
+    position: absolute;
+    right:50px;
+    top:50px;
+    z-index: +1;
+}
+
+
+/*
+    Welcome page(temp)
+ */
+.h-e-a-d-e-r-t-e-x-t-wel {
+    height: 27.9px;
+    font-family: Oxygen;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    margin-left: 8%;
+    margin-bottom: 8%;
+}
+
+.welcome-text-dark-wel{
+    margin:5% auto;
+    width: 452px;
+    font-family: Oxygen;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    color: #1b2242;
+}
+
+.email-sent-block-wel{
+    background-color: white;
+    margin:0;
+    text-align: center;
+    padding:0;
+    position: absolute;
+    left:25%;
+    top:25%;
+    z-index:+1;
+    height: 350px;
+    width:500px;
+}
+
+
+.email-sent-block-wel>div {
+    display: inherit;
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width:500px){
+    .col-md-3{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    .col-md-5{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    .col-md-4{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    .col-md-6{
+        width:100%;
+    }
+
+    .col-md-offset-3{
+        width:100%;
+    }
+
+
+    .welcome-title{
+        width:25%;
+    }
+
+    .login-page-block{
+        width:100%;
+    }
+
+    .welcome-block{
+        width:100%;
+    }
+
+    .email-sent-block-wel{
+        width:100%;
+    }
+}
+
+
+.float_on_the_map{
+    text-align: center;
+    position: absolute;
+    left: 0; top: 10%; right: 0; bottom: 0;
+    margin: auto;
+    z-index:+1;
+}
+
+.float_on_the_map-large{
+    text-align: center;
+    position: absolute;
+    left: 0; top: 10%; right: 0; bottom: 0;
+    margin: auto;
+    z-index:+1;
+    height:100%;
+    width:100%;
+}
+
+.float_on_the_map>div {
+    display: inherit;
+}
+.help-block{
+    color:red;
+}
+
+.drop-zone {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color:rgba(10, 19, 58, 0.93);
+    border:none;
+    height:100px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:100px;
+}
+
+.drop-zone-img {
+    height:85px;
+    width:85px;
+    margin:auto;
+    border:1px solid black;
+}
+
+.img-circle {
+    border-radius: 50%;
+    height:75px;
+    width:75px;
+    margin:auto;
+    background-color:rgba(10, 19, 58, 0.93);
+}
+
+/*
+    User profile, Side bar
+ */
+.profile-section{
+    height:300px;
+    padding:30px;
+    border-bottom: rgba(255,255,255,0.75);
+}
+
+.profile-att{
+    width:100%
+}
+
+.center-text{
+    margin:auto;
+    padding:0;
+    font-family: Oxygen;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    color: #dee1f3;
+    text-align: center;
+}
+
+a.list-group-item{
+    color:white;
+    background-color: rgba(10, 19, 58, 0.93);
+}
+
+a.list-group-item:hover {
+    color:white;
+    background-color: rgba(24, 35, 85, 0.44);
+}
+
+.list-group-item{
+    border:none;
+}
+
+
+.btn-on-map{
+    position:absolute;
+    top:0;
+    z-index: +1;
+    right:0;
+}
+
+.profile-btn-on-map{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: +1;
+}
+
+.modal-backdrop{
+    z-index:-1;
+}
+
+.sidebar{
+    background-color: rgb(10, 19, 58);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    padding:0;
+    height:100%;
+}
+
+.sidebar-icon{
+    float:left;
+    margin-left:10%;
+    margin-right:10%;
+    width:20px;
+    height:20px;
+}
+
+.btn-fold-sidebar{
+    background-color: transparent;
+    color:white;
+    float:right;
+    border:none;
+}
+
+.btn-unfold-sidebar{
+    background-color: rgba(10, 19, 58, 0.93);
+    color:white;
+    border:white;
+    border-width: medium;
+    width:5px;
+}
+
+.btn-unfold-sidebar:hover{
+    border:none;
+    color:white;
+    border-radius: 0;
+    background-color: rgba(24, 35, 85, 0.44);
+}
+
+
+.btn-fold-sidebar:hover{
+    border:none;
+    color:white;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+
+/*
+    Account Setting Menu & Page
+ */
+.setting-menu{
+    float:left;
+}
+
+.setting-content{
+    float: right;
+}
+
+.profile-title{
+    float:left;
+}
+
+.profile-content{
+    float:right;
+}
+
+.setting-content-title{
+    float:left;
+}
+
+.setting-content-photo{
+    margin:10% 5% auto;
+    float:right;
+}
+
+.setting-content-photo-area{
+    float:right;
+}
+
+.table{
+    margin-top:120px;
+}
+
+.middle-block{
+    margin-top:10%;
+}
