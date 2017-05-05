@@ -22,13 +22,24 @@
     #chart {
       height: 100px;
       width: 500px;
-      margin: auto;
+      /*margin: auto;*/
+      position: relative;
+    }
+    #chart1 {
+      height: 100px;
+      width: 500px;
+      /*margin: auto;*/
+      position: relative;
+      float: right;
     }
     </style>
   </head>
   <body>
     <div id="chart">
         <canvas id="mychart"></canvas>
+    </div>
+    <div id="chart1">
+        <canvas id="mychart1"></canvas>
     </div>
     <span class="data" style="display:none"><%= data %></span>
     <div class="form-group row" style="display:none">

@@ -27,6 +27,12 @@
       .legend .negative { background-color:red; }
       .legend .neutral { background-color:lightblue; }
 
+      .chart {
+        height: 100px;
+        width: 500px;
+        margin: auto;
+      }
+
     </style>
   </head>
   <body>
@@ -42,6 +48,11 @@
           <li><span class="neutral"></span>Neutral Sentiment</li>
       </ul>
     </div>
+
+    <!-- <div id="floating-panel">
+        <canvas id="mychart"></canvas>
+    </div> -->
+
     <span class="data" style="display:none"><%= data %></span>
     <div class="form-group row" style="display:none">
             <label for="data" class="col-sm-4 col-form-label">Data</label>
