@@ -1,15 +1,52 @@
 var map;
 //console.log("data:", data )
 let data = $('.data').text();
-console.log("data", data );
-//data = JSON.parse(data);
-//console.log("data. in google Maps: ", data);
-// var coords = [{
-//     lat: data[1],
-//     longt: data[0]
-// }]
-// console.log("coords: ", coords);
+//console.log("data", data );
+data = JSON.parse(data);
+console.log("data. in google Maps: ", data);
+var coords = [];
+
+for (var i = 0; i < data.length; i++) {
+    if (data[i].value.coords) {
+        //coords.push()
+        console.log("in heat map coords: ", data[i].value.coords);
+        coords.push({lat: data[i].value.coords[0], lng: data[i].value.coords[1]})
+    } else if (data[i].value.place) {
+        //coords.push()
+        console.log("in heat map places bouding box coords: ", data[i].value.place.bounding_box.coordinates[0][0]);
+        coords.push({lat: data[i].value.place.bounding_box.coordinates[0][0][1], lng: data[i].value.place.bounding_box.coordinates[0][0][0]})
+    }
+}
+
+
+function addMarker(location, map) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+
+        //http://maps.google.com/mapfiles/ms/icons/blue-dot.png
+        var marker = new google.maps.Marker({
+          position: location,
+          //label: labels[labelIndex++ % labels.length],
+          title:"Hello",
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          map: map
+        });
+}
+
 function initMap() {
+
+  //var myLatLng = {lat: -25.363, lng: 131.044};
+  console.log("coords for markers: ", coords);
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: coords[0]
+  });
+
+  for (var i = 0; i < coords.length; i++) {
+     addMarker(coords[i], map);
+  }
+
+
 //   map = new google.maps.Map(document.getElementById('map'), {
 //     zoom: 5,
 //     center: {lat: -33.865427, lng: 151.196123},
