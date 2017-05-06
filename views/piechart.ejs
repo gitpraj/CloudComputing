@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap-social.css" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js" integrity="sha256-thgNwq1kqppxWOZpF2V/KfgGpLeBWbLMg704XfwYUDQ=" crossorigin="anonymous"></script>
     <style>
@@ -18,6 +19,11 @@
 
     .bar:hover {
       fill: orange;
+    }
+    body {
+      /*font-family: 'Tangerine', serif;*/
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 48px;
     }
     #chart {
       height: 100px;
@@ -32,11 +38,17 @@
       position: relative;
       float: right;
     }
+    /*#name {
+      align:center
+    }*/
     </style>
   </head>
   <body>
     <div id="chart">
         <canvas id="mychart"></canvas>
+    </div>
+    <div align="center" id="name">
+        <%= teamName %>
     </div>
     <div id="chart1">
         <canvas id="mychart1"></canvas>

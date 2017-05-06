@@ -140,11 +140,11 @@ app.get("/pie", function(req, res) {
             }
     });
 });
-app.post("/pie", function(req, res) {
+app.post("/landing/afl/:teamName/pie", function(req, res) {
   console.log("in post pie")
   let body = req.body;
   let data = JSON.parse(body.data);
-  res.render("piechart.ejs", {data:data});
+  res.render("piechart.ejs", {teamName:req.params.teamName, data:data});
 
 });
 
