@@ -26,6 +26,19 @@ db.exists(function (err, exists) {
     }
   });
 
+  var db2 = connection.database('tweets_all');
+  db2.exists(function (err, exists) {
+      if (err) {
+        console.log('error', err);
+      } else if (exists) {
+        console.log('the force is with you.');
+      } else {
+        console.log('database does not exists.');
+      }
+    });
+
+
   module.exports = {
-    db: db
+    db: db,
+    db2: db2
   }

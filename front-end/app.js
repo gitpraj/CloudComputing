@@ -150,6 +150,54 @@ app.post("/landing/afl/:teamName/pie", function(req, res) {
 
 
 
+/* Other sports urls */
+
+app.post("/landing/othersport", function(req, res) {
+  db.db2.view('sport/otherSportView', function (err, response) {
+          if (err) {
+            console.log("error")
+          } else {
+            var sendKeys = [];
+            for (var i = 0; i < response.length; i++) {
+                if (sendKeys.indexOf(response[i].key) != -1) {
+                  // do nothing
+                } else {
+                  sendKeys.push(response[i].key);
+                }
+            }
+            console.log("sendKeys: ", sendKeys)
+            res.render("otherSport.ejs", {data:JSON.stringify(response), dataRaw: response, names:sendKeys});
+          }
+  });
+});
+
+app.post("/landing/othersport/:sportName", function(req, res) {
+    let sportName = req.params.sportName
+    db.db2.view('sport/otherSportView', function (err, response) {
+            if (err) {
+              console.log("error")
+            } else {
+              console.log(response[0].key)
+              console.log("value: ", response[0])
+              var teamObj = []
+              for (var i = 0; i < response.length; i++) {
+                  if (response[i].key == sportName) {
+                    teamObj.push(response[i])
+                  } else {
+                    //do Nothing
+                  }
+              }
+              res.render("otherSportHeatMap.ejs", {sportName:sportName, data:(JSON.stringify(teamObj))});
+            }
+    });
+});
+
+app.get("/heatheatMap", function(req, res) {
+    res.render("otherSportHeatMap.ejs")
+});
+
+
+
 
 app.listen(5000, function() {
 		console.log("Server running on port 5000");

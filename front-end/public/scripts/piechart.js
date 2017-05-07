@@ -157,7 +157,7 @@ cnt_qld = ((cnt_qld / global_coords_count_imp) * 100)
 console.log("cnt_qld: ", cnt_qld);
 cnt_nt = ((cnt_nt / global_coords_count_imp) * 100)
 console.log("cnt_nt: ", cnt_nt);
-cnt_tas = ((cnt_wa / global_coords_count_imp) * 100)
+cnt_wa = ((cnt_wa / global_coords_count_imp) * 100)
 console.log("cnt_was: ", cnt_wa);
 cnt_sa = ((cnt_sa / global_coords_count_imp) * 100)
 console.log("cnt_sa: ", cnt_sa);
