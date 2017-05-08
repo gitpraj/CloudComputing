@@ -38,16 +38,16 @@
             <% for (var i = 0; i < names.length; i++) { %>
                 <input type="submit" class="btn btn-default btn-block updateDetails" formaction="/landing/afl/<%=names[i] %>" value="<%= names[i] %>"></input>
             <% } %>
-            <!-- <input type = "submit" class="btn btn-default btn-block updateDetails" value="Coming Soon"> -->
+            <input type = "submit" class="btn btn-default btn-success btn-block btn-block gender " formaction="/landing/gender" value="Gender Classification">
         </div>
-        <span class="data" style="display:none"><%= data %></span>
+        <!-- <span class="data" style="display:none"><%= data %></span> -->
 
-        <div class="form-group row" style="display:none">
+        <!-- <div class="form-group row" style="display:none">
                 <label for="data" class="col-sm-4 col-form-label">Data</label>
                 <div class="col-sm-8">
                     <textarea class="form-control" rows="5" id="data" name="data"><%= JSON.stringify(data) %></textarea>
                 </div>
-        </div>
+        </div> -->
 
     </form>
 
