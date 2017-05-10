@@ -1,6 +1,6 @@
 #Created by COMP90024 Assignment 2 CCC Team 8, Semester 1 2017
 
-- hosts: webservers:dbservers
+- hosts: localhost
   tasks:
    - name: Install git
      sudo: yes
