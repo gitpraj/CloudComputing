@@ -1,0 +1,9 @@
+#Created by COMP90024 Assignment 2 CCC Team 8, Semester 1 2017
+
+- hosts: webservers:dbservers
+  tasks:
+   - name: Install git
+     sudo: yes
+     apt: pkg=git state=installed update_cache=true
+
+   - script: ./script.sh
