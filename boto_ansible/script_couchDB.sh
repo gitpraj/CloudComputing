@@ -5,4 +5,5 @@ sudo apt-get update
 
 # git setup
 sudo apt-get install git
-git clone https://github.com/gitpraj/CloudComputing.git
+sudo apt-get update
+sudo apt-get install couchdb

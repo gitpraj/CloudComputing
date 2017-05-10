@@ -3,5 +3,3 @@
 
 python create_key.py
 python create_vms.py
-
-ansible_playbook ansible_web_server.yml
