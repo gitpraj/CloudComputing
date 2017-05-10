@@ -1,0 +1,15 @@
+couchdb:
+  https: no
+  ip_address: 115.146.93.148
+  port: "5984"
+  login: admin
+  password: password
+  databases:
+    tweets: tweets
+    users: users
+twitter:
+  OAuth:
+    consumer_key: pvkEEsZqm8tAlr54O3qNCvGux
+    consumer_secret: DKBID6zwrW2Ua8eqHZ6pTdYtvnGay3eLF6D6MbMjSqd3DG5SJl
+    access_token: 1662493112-PeS6dfZ6Y1Gm5RzAcoufSr9hUeMHpfH1k5u52aP
+    access_secret: 4wE3aPMKSHGDVF3zOqNLEaIio9gs0NbPOMjeipGlPNvSQ
