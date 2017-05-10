@@ -5,4 +5,4 @@ sudo apt-get update
 
 # git setup
 sudo apt-get install git
-git clone https://github.com/zhangy10/ccc_team_2.git
+git clone https://github.com/gitpraj/CloudComputing.git
