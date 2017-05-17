@@ -37,9 +37,9 @@ RUN = False
 # to their embedding vector
 
 def SentimentCheck(text) :
-    file=Path("model_new.json")
+    file1=Path("model_new.json")
     # if model_new.jsom doesn't exist
-    if(!file.exists()) :
+    if(not file1.exists()) :
         print('Indexing word vectors.')
 
         embeddings_index = {}
