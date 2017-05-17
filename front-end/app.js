@@ -147,6 +147,53 @@ app.get("/landing/gender", function(req, res) {
           }
   });
 });
+
+app.get("/landing/gender2", function(req, res) {
+  db.db.view('aflteams/gender', function (err, response) {
+          if (err) {
+            ////console.log("error")
+          } else {
+            // var genderKeys = [];
+            // for (var i = 0; i < response.length; i++) {
+            //     if (genderKeys.indexOf(response[i].key) != -1) {
+            //       // do nothing
+            //     } else {
+            //       genderKeys.push(response[i].key);
+            //
+            //     }
+            // }
+            //
+            // //console.log("genderKeys: ", genderKeys)
+            objtoSend = calculations(response);
+            //console.log("objtoSend: ", objtoSend)
+            res.render("gender2.ejs", {data:JSON.stringify(objtoSend), rawdata:objtoSend});
+          }
+  });
+});
+app.post("/landing/gender2", function(req, res) {
+  db.db.view('aflteams/gender', function (err, response) {
+          if (err) {
+            ////console.log("error")
+          } else {
+            // var genderKeys = [];
+            // for (var i = 0; i < response.length; i++) {
+            //     if (genderKeys.indexOf(response[i].key) != -1) {
+            //       // do nothing
+            //     } else {
+            //       genderKeys.push(response[i].key);
+            //
+            //     }
+            // }
+            //
+            // //console.log("genderKeys: ", genderKeys)
+            objtoSend = calculations(response);
+            //console.log("objtoSend: ", objtoSend)
+            res.render("gender2.ejs", {data:JSON.stringify(objtoSend), rawdata:objtoSend});
+          }
+  });
+});
+
+
 function calculations(response) {
     var genderMale = [], genderFemale = [], genderBrand = [];
     var genderBrandObj = [];
@@ -349,6 +396,6 @@ app.get("/heatheatMap", function(req, res) {
 
 
 
-app.listen(80, function() {
+app.listen(5000, function() {
 		console.log("Server running on port 80");
 });
