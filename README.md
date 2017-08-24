@@ -2,18 +2,18 @@
 Australian City Analytics
 
 The  basic  automated  deployment  scripts  were  designed  for  and  tested  with  the  Ubuntu  16.04 (Trusty)  image  provided  by  Nectar.  The  whole deployment process must occur with just a few commands.
-We have used shell scripts and automatic virtual systems creation scripts like boto/ansible for the whole system to be up. Running the file name script_to_setup.sh,  present in the boto_ansible folder present in the repository, would create a key pair, and use the same key pair for creating 4 different VMs, one for twitter harvester, one for couchDB, one for Sentiment Analysis and the last one for the WebServer.
+We have used shell scripts and automatic virtual systems creation scripts like boto/ansible for the whole system to be up. Running the file name script_to_setup.sh,  present in the boto/ansible folder present in the repository, would create a key pair, and use the same key pair for creating 4 different VMs, one for twitter harvester, one for couchDB, one for Sentiment Analysis and the last one for the WebServer.
 
 Command to run:
-$ sh script_to_setup.sh
+```$ sh script_to_setup.sh```
 
 Then for each virtual machine created, an ansbile yml file is supposed to be run in order to install the required packages, which would then make the machine available for use. We then have to run 4 different ansible files locally on different VMs, which is present in the same folder as the previously stated script. 
-
+```
 $ ansible_playbook ansible_web_server.yml
 $ ansible_playbook ansible_sentiment_analysis.yml
 $ ansible_playbook ansible_twitter_harvester.yml
 $ ansible_playbook ansible_couchDB.yml
-
+```
 The virtual machines will be ready, to use after running all the above scripts.
 
 
